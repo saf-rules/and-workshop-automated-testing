@@ -10,6 +10,7 @@
   "scripts": {
     "serve": "nodemon src/index.js",
     "start": "forever src/index.js",
+    "test": "jest",
     "lint": "eslint .",
     "precommit": "lint-staged"
   },
