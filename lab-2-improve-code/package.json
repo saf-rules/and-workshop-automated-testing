@@ -7,10 +7,16 @@
   "license": "MIT",
   "private": true,
   "devDependencies": {
-    "jest": "^24.0.0"
+    "eslint": "^5.12.1",
+    "eslint-config-prettier": "^4.0.0",
+    "eslint-plugin-prettier": "^3.0.1",
+    "jest": "^24.0.0",
+    "prettier": "1.16.2"
   },
   "scripts": {
     "start": "node src/index.js",
-    "test": "jest ."
-  }
+    "test": "jest .",
+    "lint": "eslint ."
+  },
+  "dependencies": {}
 }
