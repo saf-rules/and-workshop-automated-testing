@@ -199,10 +199,6 @@
         "text"
       ],
       "properties": {
-        "_id": {
-          "type": "string",
-          "description": "ID of the TODO item"
-        },
         "text": {
           "type": "string",
           "description": "Description of your TODO item"
@@ -215,10 +211,6 @@
         "text"
       ],
       "properties": {
-        "_id": {
-          "type": "string",
-          "description": "ID of the TODO item"
-        },
         "text": {
           "type": "string",
           "description": "Description of your TODO item"
