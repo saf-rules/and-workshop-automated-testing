@@ -7,6 +7,7 @@
   "license": "MIT",
   "private": true,
   "devDependencies": {
+    "codecov": "^3.1.0",
     "eslint": "^5.12.1",
     "eslint-config-prettier": "^4.0.0",
     "eslint-plugin-prettier": "^3.0.1",
@@ -15,8 +16,13 @@
   },
   "scripts": {
     "start": "node src/index.js",
-    "test": "jest .",
-    "lint": "eslint ."
+    "test": "jest",
+    "test:coverage": "jest --coverage && codecov --token=9a31b8c0-c758-4c37-9dea-aa872e54ead9 .",
+    "lint": "eslint .",
+    "jest": {
+      "coverageDirectory": "./coverage/",
+      "collectCoverage": true
+    }
   },
   "dependencies": {}
 }
