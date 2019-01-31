@@ -12,7 +12,15 @@
     "start": "forever src/index.js",
     "test": "jest",
     "lint": "eslint .",
-    "precommit": "lint-staged"
+    "precommit": "lint-staged",
+    "jest": {
+      "testEnvironment": "node",
+      "collectCoverageFrom": [
+        "src/**/*.js",
+        "!src/index.js",
+        "!src/server.js"
+      ]
+    }
   },
   "devDependencies": {
     "eslint": "^5.8.0",
